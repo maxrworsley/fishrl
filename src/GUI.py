@@ -8,7 +8,15 @@ from Snake import Snake
 
 class PygameGUI:
 
-    __col_lookup = {'white': (255, 255, 255), 'blue': (0, 0, 255), 'black': (0, 0, 0)}
+    __col_lookup = {
+        'white': (255, 255, 255),
+        'off-white': (210, 206, 235),
+        'blue': (0, 0, 255),
+        'black': (0, 0, 0),
+        'blue-midnight': (62, 81, 176),
+        'blue-grey': (36, 57, 69),
+        'blue-sky': (50, 130, 173)
+    }
 
     def __init__(self, bg_colour: str, screen_size: [int, int], sim_bounds: np.array, fps: int):
         self.__bg_colour = self.__lookup_colour(bg_colour)
